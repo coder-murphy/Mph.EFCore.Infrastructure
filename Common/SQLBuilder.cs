@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace Mph.EFCore.Infrastructure.Common
 {
-
     public static class SQLBuilder
     {
         /// <summary>

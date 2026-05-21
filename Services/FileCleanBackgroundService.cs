@@ -1,6 +1,7 @@
 using Mph.EFCore.Infrastructure.Utils;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Mph.EFCore.Infrastructure.DbContexts;
 
 namespace Mph.EFCore.Infrastructure.Services
 {
@@ -63,7 +64,7 @@ namespace Mph.EFCore.Infrastructure.Services
 
             // 数据库合法文件路径集合
             // eg.
-            var dbPaths = [];
+            var dbPaths = new string[] { "Cache" };
             //await db.Files
             //    .Select(x => x.FilePath)
             //    .ToListAsync();

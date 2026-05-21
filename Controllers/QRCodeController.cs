@@ -50,14 +50,7 @@ namespace Mph.EFCore.Infrastructure.Controllers
         {
             var res = HttpResult.Fail();
             // 推送给目标电脑
-            await WebSocketService.SendMessage(options.Sid, new WsQRScanCodeData
-            {
-                Sid = options.Sid,
-                DeviceId = options.DeviceId,
-                Command = options.Command,
-                CommandParameters = options.CommandParameters,
-                MetaData = options.MetaData,
-            });
+            await WebSocketService.SendMessage(options.Sid, options);
             res.IsSuccess = true;
             res.Code = 0;
             res.Message = "指令已推送";

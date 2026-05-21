@@ -1,0 +1,85 @@
+## 编译产物
+[Bb]in/
+[Oo]bj/
+[Rr]elease/
+[Dd]ebug/
+x64/
+x84/
+amd64/
+
+## 日志 / 输出
+*.log
+*.txt
+!README.txt
+*.resources
+
+## Visual Studio 自动生成文件
+.vs/
+.vscode/
+*.user
+*.useross
+*.sln.docstates
+*.suo
+*.ide/
+*.ide-wal
+
+## 测试 / 覆盖率
+TestResults/
+*.coverage
+*.cover
+
+## NuGet 包
+**/[Pp]ackages/*
+!**/packages.config
+!**/packages.references
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+
+## 发布文件夹
+[Dd]ist/
+[Pp]ublish/
+
+## 配置文件（含密钥、本地配置）
+appsettings.Development.json
+appsettings.*.json
+!appsettings.json
+secrets.json
+*.pfx
+*.publishsettings
+*.pubxml
+*.pubxml.user
+
+## 工具/缓存
+.dotnet/
+*.dotnet.user
+*.jfm
+*.cache
+*.msbuild.tmp
+*.VC.db
+*.VC.opendb
+*.tmp
+
+## 临时文件
+*.tmp
+*.temp
+*.swp
+*.bak
+*.old
+
+## 前端（Vue/React 如有）
+node_modules/
+dist/
+.env
+.env.local
+.env.development.local
+
+## 数据库
+*.mdf
+*.ldf
+*.db
+*.sqlite
+
+## 服务/工具
+docker-compose.override.yml
