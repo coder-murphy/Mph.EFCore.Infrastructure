@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-using Mph.EFCore.Infrastructure.Enums;
+using Mph.EFCore.Infrastructure.Defined;
 
 namespace Mph.EFCore.Infrastructure.Model
 {
